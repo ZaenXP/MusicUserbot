@@ -141,7 +141,7 @@ async def repo(client, m: Message):
 • FFMPEG
 • Nodejs v16+
 
-[Repo MusicUserbot](https://github.com/Zaen-ubot/MusicUserbot)
+[Repo MusicUserbot](https://github.com/ZaenXP/MusicUserbot)
 
 📝 Variabel Yang Dibutuhkan
 • `API_ID` - Dapatkan Dari [my.telegram.org](https://my.telegram.org)
