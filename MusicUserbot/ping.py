@@ -1,7 +1,6 @@
 #Zaen [ @TeleUdahRusak
 # Don't remove credits ⚠️
 
-
 import os
 import sys
 from datetime import datetime
