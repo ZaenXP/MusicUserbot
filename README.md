@@ -15,10 +15,10 @@
 
 
 
-<a href="https://www.gambaranimasi.org/cat-bintang-280.htm"><img src="https://www.gambaranimasi.org/data/media/280/animasi-bergerak-bintang-0157.gif" border="0" alt="animasi-bergerak-bintang-0157" /></a>
+<a href="https://www.gambaranimasi.org/cat-bintang-290.htm"><img src="https://www.gambaranimasi.org/data/media/280/animasi-bergerak-bintang-0157.gif" border="0" alt="animasi-bergerak-bintang-0157" /></a>
     <p align="center"> 
     ✘𝗠𝘂𝘀𝗶𝗰 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗧𝗼 𝗗𝗲𝗽𝗹𝗼𝘆 𝗢𝗻✘ ✘𝗛𝗲𝗿𝗼𝗸𝘂✘
-<a href="https://www.gambaranimasi.org/cat-bintang-280.htm"><img src="https://www.gambaranimasi.org/data/media/280/animasi-bergerak-bintang-0157.gif" border="0" alt="animasi-bergerak-bintang-0157" /></a>
+<a href="https://www.gambaranimasi.org/cat-bintang-290.htm"><img src="https://www.gambaranimasi.org/data/media/280/animasi-bergerak-bintang-0157.gif" border="0" alt="animasi-bergerak-bintang-0157" /></a>
    
 <img src="https://telegra.ph/file/613f681a511feb6d1b186.jpg">
 
