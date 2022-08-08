@@ -130,8 +130,9 @@ async def play(client, m: Message):
                     caption=f"""
 **▶ Lagu Di Antrian Ke {pos}
 🏷 Judul: [{songname}]({link})
-💡 Status: Playing
-🎧 Permintaan: {m.from_user.mention}**
+💡 Status: `Playing`
+🎧 Permintaan: {m.from_user.mention}
+⏱ Durasi: {duration} Mins**
 """,
                 )
             else:
