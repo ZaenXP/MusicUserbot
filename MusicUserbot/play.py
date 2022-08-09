@@ -130,9 +130,8 @@ async def play(client, m: Message):
                     caption=f"""
 **▶ Lagu Di Antrian Ke {pos}
 🏷 Judul: [{songname}]({link})
-💡 Status: `Playing`
-🎧 Permintaan: {m.from_user.mention}
-⏱ Durasi: {duration} Mins**
+💡 Status: Playing
+🎧 Permintaan: {m.from_user.mention}**
 """,
                 )
             else:
@@ -152,8 +151,7 @@ async def play(client, m: Message):
 **▶ Mulai Memutar Lagu
 🏷 Judul: [{songname}]({link})
 💡 Status: Playing
-🎧 Atas Permintaan: {m.from_user.mention}
-⏱ Durasi: {duration} Mins**
+🎧 Atas Permintaan: {m.from_user.mention}**
 """,
                 )
 
@@ -184,8 +182,7 @@ async def play(client, m: Message):
 **▶ Lagu Di Antrian Ke {pos}
 🏷 Judul: [{songname}]({url})
 💡 Status: Playing
-🎧 Atas Permintaan: {m.from_user.mention} 
-⏱ Durasi: {duration} Mins**
+🎧 Atas Permintaan: {m.from_user.mention}**
 """,
                         )
                     else:
@@ -206,8 +203,7 @@ async def play(client, m: Message):
 **▶ Mulai Memutar Lagu
 🏷️ Judul: [{songname}]({url})
 💡 Status: Playing
-🎧 Atas Permintaan: {m.from_user.mention} 
-⏱ Durasi: {duration} Mins**
+🎧 Atas Permintaan: {m.from_user.mention}**
 """,
                             )
                         except Exception as ep:
@@ -254,8 +250,7 @@ async def videoplay(client, m: Message):
 **▶ Video Di Antrian Ke {pos}
 🏷️ Judul: [{songname}]({link})
 💡 Status: Playing
-🎧 Atas Permintaan: {m.from_user.mention}
-⏱ Durasi: {duration} Mins**
+🎧 Atas Permintaan: {m.from_user.mention}**
 """,
                 )
             else:
@@ -279,8 +274,7 @@ async def videoplay(client, m: Message):
 **▶ Mulai Memutar Video
 🏷️ Judul: [{songname}]({link})
 💡 Status: Playing
-🎧 Atas permintaan: {m.from_user.mention} 
-⏱ Durasi: {duration} Mins**
+🎧 Atas permintaan: {m.from_user.mention}**
 """,
                 )
 
@@ -317,8 +311,7 @@ async def videoplay(client, m: Message):
 **▶ Video Di Antrian Ke {pos}
 🏷️ Judul: [{songname}]({url})
 💡 Status: Playing
-🎧 Atas Permintaan: {m.from_user.mention} 
-⏱ Durasi: {duration} Mins**
+🎧 Atas Permintaan: {m.from_user.mention}**
 """,
                         )
                     else:
@@ -337,8 +330,7 @@ async def videoplay(client, m: Message):
 **▶ Mulai Memutar Video
 🏷️ Judul: [{songname}]({url})
 💡 Status: Playing
-🎧 Atas Permintaan: {m.from_user.mention} 
-⏱ Durasi: {duration} Mins**
+🎧 Atas Permintaan: {m.from_user.mention}**
 """,
                             )
                         except Exception as ep:
@@ -387,8 +379,7 @@ async def playfrom(client, m: Message):
 **▶ Mulai Memutar Lagu Dari {chat}
 🏷️ Judul: [{songname}]({link})
 💡 Status: Playing
-🎧 Atas Permintaan: {m.from_user.mention} 
-⏱ Durasi: {duration} Mins**
+🎧 Atas Permintaan: {m.from_user.mention}**
 """,
                     )
             await hmm.delete()
