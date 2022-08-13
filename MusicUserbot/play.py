@@ -33,6 +33,15 @@ AMBILFOTO = [
 
 IMAGE_THUMBNAIL = random.choice(AMBILFOTO)
 
+
+def convert_seconds(seconds):
+    seconds = seconds % (24 * 3600)
+    seconds %= 3600
+    minutes = seconds // 60
+    seconds %= 60
+    return "%02d:%02d" % (minutes, seconds)
+
+
 # music player
 def ytsearch(query):
     try:
@@ -44,7 +53,8 @@ def ytsearch(query):
             else:
                 songname = r["title"]
             url = f"https://www.youtube.com/watch?v={ytid}"
-        return [songname, url]
+            duration = r["duration"]
+        return [songname, url, duration]
     except Exception as e:
         print(e)
         return 0
@@ -79,7 +89,8 @@ def ytsearch(query):
             else:
                 songname = r["title"]
             url = f"https://www.youtube.com/watch?v={ytid}"
-        return [songname, url]
+            duration = r["duration"]
+        return [songname, url, duration]
     except Exception as e:
         print(e)
         return 0
@@ -119,8 +130,10 @@ async def play(client, m: Message):
                     songname = replied.audio.title[:35] + "..."
                 else:
                     songname = replied.audio.file_name[:35] + "..."
+                duration = convert_seconds(replied.audio.duration)
             elif replied.voice:
                 songname = "Voice Note"
+                duration = convert_seconds(replied.voice.duration)
             if chat_id in QUEUE:
                 pos = add_to_queue(chat_id, songname, dl, link, "Audio", 0)
                 await huehue.delete()
@@ -128,10 +141,11 @@ async def play(client, m: Message):
                 await m.reply_photo(
                     photo="https://telegra.ph/file/613f681a511feb6d1b186.jpg",
                     caption=f"""
-**▶ Lagu Di Antrian Ke {pos}
-🏷 Judul: [{songname}]({link})
-💡 Status: Playing
-🎧 Permintaan: {m.from_user.mention}**
+**▶ Lagu Di Antrian Ke** `{pos}`
+🏷 **Judul:** [{songname}]({link})
+⏱️ **Duration:** `{duration}`
+💡 **Status:** `Playing`
+🎧 **Permintaan:** {m.from_user.mention}
 """,
                 )
             else:
@@ -148,10 +162,11 @@ async def play(client, m: Message):
                 await m.reply_photo(
                     photo="https://telegra.ph/file/613f681a511feb6d1b186.jpg",
                     caption=f"""
-**▶ Mulai Memutar Lagu
-🏷 Judul: [{songname}]({link})
-💡 Status: Playing
-🎧 Atas Permintaan: {m.from_user.mention}**
+**▶ Mulai Memutar Lagu**
+🏷 **Judul:** [{songname}]({link})
+⏱️ **Duration:** `{duration}`
+💡 **Status:** `Playing`
+🎧 **Atas Permintaan:** {m.from_user.mention}
 """,
                 )
 
@@ -168,6 +183,7 @@ async def play(client, m: Message):
             else:
                 songname = search[0]
                 url = search[1]
+                duration = search[2]
                 hm, ytlink = await ytdl(url)
                 if hm == 0:
                     await huehue.edit(f"**YTDL ERROR âš ï¸** \n\n`{ytlink}`")
@@ -179,10 +195,11 @@ async def play(client, m: Message):
                         await m.reply_photo(
                             photo=f"{IMAGE_THUMBNAIL}",
                             caption=f"""
-**▶ Lagu Di Antrian Ke {pos}
-🏷 Judul: [{songname}]({url})
-💡 Status: Playing
-🎧 Atas Permintaan: {m.from_user.mention}**
+**▶ Lagu Di Antrian Ke** `{pos}`
+🏷 **Judul:** [{songname}]({url})
+⏱️ **Duration:** `{duration}`
+💡 **Status:** `Playing`
+🎧 **Atas Permintaan:** {m.from_user.mention}
 """,
                         )
                     else:
@@ -200,10 +217,11 @@ async def play(client, m: Message):
                             await m.reply_photo(
                                 photo=f"{IMAGE_THUMBNAIL}",
                                 caption=f"""
-**▶ Mulai Memutar Lagu
-🏷️ Judul: [{songname}]({url})
-💡 Status: Playing
-🎧 Atas Permintaan: {m.from_user.mention}**
+**▶ Mulai Memutar Lagu**
+🏷️ **Judul:** [{songname}]({url})
+⏱️ **Duration** `{duration}`
+💡 **Status:** `Playing`
+🎧 **Atas Permintaan:** {m.from_user.mention}
 """,
                             )
                         except Exception as ep:
@@ -297,6 +315,7 @@ async def videoplay(client, m: Message):
             else:
                 songname = search[0]
                 url = search[1]
+                duration = search[2]
                 hm, ytlink = await ytdl(url)
                 if hm == 0:
                     await huehue.edit(f"**YTDL ERROR âš ï¸** \n\n`{ytlink}`")
@@ -308,10 +327,11 @@ async def videoplay(client, m: Message):
                         await m.reply_photo(
                             photo=f"{IMAGE_THUMBNAIL}",
                             caption=f"""
-**▶ Video Di Antrian Ke {pos}
-🏷️ Judul: [{songname}]({url})
-💡 Status: Playing
-🎧 Atas Permintaan: {m.from_user.mention}**
+**▶ Video Di Antrian Ke** `{pos}`
+🏷️ **Judul:** [{songname}]({url})
+⏱️ **Duration:** `{duration}`
+💡 **Status:** `Playing`
+🎧 **Atas Permintaan:** {m.from_user.mention}
 """,
                         )
                     else:
@@ -327,10 +347,11 @@ async def videoplay(client, m: Message):
                             await m.reply_photo(
                                 photo=f"{IMAGE_THUMBNAIL}",
                                 caption=f"""
-**▶ Mulai Memutar Video
-🏷️ Judul: [{songname}]({url})
-💡 Status: Playing
-🎧 Atas Permintaan: {m.from_user.mention}**
+**▶ Mulai Memutar Video**
+🏷️ **Judul:** [{songname}]({url})
+⏱️ **Duration:** `{duration}`
+💡 **Status:** `Playing`
+🎧 **Atas Permintaan:** {m.from_user.mention}
 """,
                             )
                         except Exception as ep:
