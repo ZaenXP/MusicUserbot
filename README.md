@@ -27,6 +27,19 @@
 <a href="https://cloud.okteto.com/deploy?repository=https://github.com/ZaenXP/MusicUserBot"><img src="https://img.shields.io/badge/Deploy%20To%20Okteto-informational?style=for-the-badge&logo=Okteto" width="220""/></a>
 
 
+<h4>Deploy Vps</h4>
+
+
+```
+• git clone https://github.com/ZaenXP/MusicUserbot
+• cd MusicUserbot
+• pip3 install -r requirements.txt
+• nano .env
+“ Edit your Vars here , Save type ctrl S + Ctrl X
+• screen -S MusicUserbot
+• To run type python3 main.py
+```
+
 ## 🛠 Commands:
 | Command | Description |
 | ------ | ------ |
