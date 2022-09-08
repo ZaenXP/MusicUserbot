@@ -42,7 +42,7 @@
 ```
 4• nano .env
 ```
- Edit your Vars here , Save type  ```ctrl S + Ctrl X```
+ Edit your Vars here , Save type```ctrl S + Ctrl X```
 ```
 5• screen -S MusicUserbot
 ```
