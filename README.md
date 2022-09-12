@@ -62,3 +62,9 @@
 | `+playlist` | menunjukkan kepada Anda semua daftar aliran saat ini|
 | `+song` | unduh musik dari youtube |
 | `+stop` |akhiri streaming (khusus admin)  |
+
+
+# 👨‍💻 Credits
+- [Pyrogram](https://github.com/pyrogram/pyrogram)
+- [Py-Tgcalls](https://github.com/pytgcalls/pytgcalls)
+- [CallsMusic Team](https://github.com/Callsmusic)
