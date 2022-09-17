@@ -54,8 +54,8 @@
 ## 🛠 Commands:
 | Command | Description |
 | ------ | ------ |
-| `!play` | memutar musik dari youtube|
-| `!videoplay` | memutar video  |
+| `!play` | memutar musik dari youtube |
+| `!videoplay` | Untuk memutar video  |
 | `!vplay` | putar video streaming langsung video |
 | `!pause` | jeda streaming (khusus admin) |
 | `!resume` | melanjutkan streaming (khusus admin)|
