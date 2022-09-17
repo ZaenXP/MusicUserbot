@@ -54,16 +54,18 @@
 ## 🛠 Commands:
 | Command | Description |
 | ------ | ------ |
-| `+play` | memutar musik dari youtube|
-| `+vplay` | memutar video dari youtube |
-| `+vplay` | putar video streaming langsung video |
-| `+pause` | jeda streaming (khusus admin) |
-| `+resume` | melanjutkan streaming (khusus admin)|
-| `+skip` | beralih ke aliran berikutnya (khusus admin) |
-| `+playlist` | menunjukkan kepada Anda semua daftar aliran saat ini|
-| `+song` | unduh musik dari youtube |
-| `+stop` |akhiri streaming (khusus admin)  |
-
+| `!play` | memutar musik dari youtube|
+| `!videoplay` | memutar video  |
+| `!vplay` | putar video streaming langsung video |
+| `!pause` | jeda streaming (khusus admin) |
+| `!resume` | melanjutkan streaming (khusus admin)|
+| `!skip` | beralih ke aliran berikutnya (khusus admin) |
+| `!playlist` | menunjukkan kepada Anda semua daftar aliran saat ini|
+| `!song` | unduh musik dari youtube |
+| `!end` |akhiri streaming (khusus admin)  |
+| `!help` | Cek pemerintah MusicUSerbot |
+| `!ping` | untuk cek MusicUserbot aktif |
+| `!restart` | untuk restart ulang MusicUserbot |
 
 # 👨‍💻 Credits
 - [Pyrogram](https://github.com/pyrogram/pyrogram)
