@@ -74,6 +74,5 @@ async def on_end_handler(_, update: Update):
         else:
             await bot.send_message(
                 chat_id,
-                f"**🗃️ Sekarang Memutar** \n[{op[0]}]({op[1]}) | `{op[2]}`",
+                f"🎧 **Sekarang Memutar** \n[{op[0]}]({op[1]}) | {op[2]}",
                 disable_web_page_preview=True,
-            )
