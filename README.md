@@ -32,23 +32,27 @@
 
 
 ```
-1• git clone https://github.com/ZaenXP/MusicUserbot
+git clone https://github.com/ZaenXP/MusicUserbot
 ```
+
 ```
-2• cd MusicUserbot
+cd MusicUserbot
 ```
+
 ```
-3• pip3 install -r requirements.txt
+pip3 install -r requirements.txt
 ```
+
 ```
-4• nano .env
+nano .env
 ```
  Edit your Vars here , Save type```ctrl S + Ctrl X```
 ```
-5• screen -S MusicUserbot
+screen -S MusicUserbot
 ```
+
 ```
-6• To run type python3 main.py
+To run type python3 main.py
 ```
 
 ## 🛠 Commands:
