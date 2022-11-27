@@ -16,7 +16,6 @@ async def main():
 """
     )
     await idle()
-    await pidle()
     print("STOPPING USERBOT")
     await bot.stop()
 
